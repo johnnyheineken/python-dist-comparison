@@ -32,4 +32,6 @@ df %>% melt() %>% ggplot(aes(x=test_name, y=value)) +
   coord_flip()+ 
   scale_fill_brewer(palette='Paired')+
   ylab('Time (in seconds)') +
-  xlab('Intel benchmarks')
+  xlab('Intel benchmarks') + ggtitle('Intel benchmarks')
+
+ggsave("Documents/aLook/blog/python-comparison/pics/intel-benchmarks.jpg")
