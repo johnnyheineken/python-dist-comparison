@@ -1,0 +1,342 @@
+{
+  "name": "noname",
+  "date": "2018-08-24-09-16-43",
+  "KMP_AFFINITY": "not set",
+  "OMP_NUM_THREADS": "not set",
+  "MKL_NUM_THREADS": "not set",
+  "host": "conda",
+  "lscpu": [
+    "b'Architecture:        x86_64",
+    "CPU op-mode(s):      32-bit, 64-bit",
+    "Byte Order:          Little Endian",
+    "CPU(s):              2",
+    "On-line CPU(s) list: 0,1",
+    "Thread(s) per core:  1",
+    "Core(s) per socket:  2",
+    "Socket(s):           1",
+    "NUMA node(s):        1",
+    "Vendor ID:           GenuineIntel",
+    "CPU family:          6",
+    "Model:               79",
+    "Model name:          Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz",
+    "Stepping:            1",
+    "CPU MHz:             2294.685",
+    "BogoMIPS:            4589.37",
+    "Hypervisor vendor:   Microsoft",
+    "Virtualization type: full",
+    "L1d cache:           32K",
+    "L1i cache:           32K",
+    "L2 cache:            256K",
+    "L3 cache:            51200K",
+    "NUMA node0 CPU(s):   0,1",
+    "Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology cpuid pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti fsgsbase bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt",
+    "'"
+  ],
+  "numactl": "",
+  "pip list": "",
+  "conda": [
+    "b'# packages in environment at /home/jan/anaconda3/envs/venv:",
+    "#",
+    "# Name                    Version                   Build  Channel",
+    "blas                      1.0                         mkl  ",
+    "ca-certificates           2018.03.07                    0  ",
+    "certifi                   2018.8.13                py37_0  ",
+    "cython                    0.28.5           py37hf484d3e_0  ",
+    "ibench                    0.1rc0                    <pip>",
+    "intel-openmp              2018.0.3                      0  ",
+    "Jinja2                    2.10                      <pip>",
+    "libedit                   3.1.20170329         h6b74fdf_2  ",
+    "libffi                    3.2.1                hd88cf55_4  ",
+    "libgcc-ng                 8.2.0                hdf63c60_1  ",
+    "libgfortran-ng            7.3.0                hdf63c60_0  ",
+    "libstdcxx-ng              8.2.0                hdf63c60_1  ",
+    "MarkupSafe                1.0                       <pip>",
+    "mkl                       2018.0.3                      1  ",
+    "mkl_fft                   1.0.4            py37h4414c95_1  ",
+    "mkl_random                1.0.1            py37h4414c95_1  ",
+    "ncurses                   6.1                  hf484d3e_0  ",
+    "numpy                     1.15.0           py37h1b885b7_0  ",
+    "numpy-base                1.15.0           py37h3dfced4_0  ",
+    "openssl                   1.0.2p               h14c3975_0  ",
+    "pip                       10.0.1                   py37_0  ",
+    "python                    3.7.0                hc3d631a_0  ",
+    "readline                  7.0                  ha6073c6_4  ",
+    "scikit-learn              0.19.1           py37hedc7406_0  ",
+    "scipy                     1.1.0            py37hc49cb51_0  ",
+    "setuptools                40.0.0                   py37_0  ",
+    "sqlite                    3.24.0               h84994c4_0  ",
+    "tk                        8.6.7                hc745277_3  ",
+    "wheel                     0.31.1                   py37_0  ",
+    "xz                        5.2.4                h14c3975_4  ",
+    "zlib                      1.2.11               ha838bed_2  ",
+    "'"
+  ],
+  "runs": [
+    {
+      "name": "Cholesky",
+      "N": 10000,
+      "times": [
+        5.399764776229858,
+        5.458528995513916,
+        5.4124085903167725
+      ],
+      "stats": {
+        "min": 5.399764776229858,
+        "max": 5.458528995513916,
+        "median": 5.4124085903167725
+      }
+    },
+    {
+      "name": "Det",
+      "N": 15000,
+      "times": [
+        37.57295894622803,
+        37.54550814628601,
+        37.68679118156433
+      ],
+      "stats": {
+        "min": 37.54550814628601,
+        "max": 37.68679118156433,
+        "median": 37.57295894622803
+      }
+    },
+    {
+      "name": "Dot",
+      "N": 5000,
+      "times": [
+        3.9919869899749756,
+        4.025757789611816,
+        4.154885768890381
+      ],
+      "stats": {
+        "min": 3.9919869899749756,
+        "max": 4.154885768890381,
+        "median": 4.025757789611816
+      }
+    },
+    {
+      "name": "Fft",
+      "N": 1000000,
+      "times": [
+        25.344172716140747,
+        25.235285997390747,
+        26.165597677230835
+      ],
+      "stats": {
+        "min": 25.235285997390747,
+        "max": 26.165597677230835,
+        "median": 25.344172716140747
+      }
+    },
+    {
+      "name": "Inv",
+      "N": 10000,
+      "times": [
+        34.53017830848694,
+        34.38777208328247,
+        34.41573929786682
+      ],
+      "stats": {
+        "min": 34.38777208328247,
+        "max": 34.53017830848694,
+        "median": 34.41573929786682
+      }
+    },
+    {
+      "name": "Lu",
+      "N": 8000,
+      "times": [
+        6.2794530391693115,
+        6.313621997833252,
+        6.177824020385742
+      ],
+      "stats": {
+        "min": 6.177824020385742,
+        "max": 6.313621997833252,
+        "median": 6.2794530391693115
+      }
+    },
+    {
+      "name": "Qr",
+      "N": 5000,
+      "times": [
+        3.8093767166137695,
+        3.9068472385406494,
+        3.812654972076416
+      ],
+      "stats": {
+        "min": 3.8093767166137695,
+        "max": 3.9068472385406494,
+        "median": 3.812654972076416
+      }
+    },
+    {
+      "name": "Svd",
+      "N": 5000,
+      "times": [
+        49.49950432777405,
+        49.59020233154297,
+        49.25622367858887
+      ],
+      "stats": {
+        "min": 49.25622367858887,
+        "max": 49.59020233154297,
+        "median": 49.49950432777405
+      }
+    },
+    {
+      "name": "Blacksch",
+      "N": 100000000,
+      "times": [
+        4.854822397232056,
+        4.703716039657593,
+        4.588045597076416
+      ],
+      "stats": {
+        "min": 4.588045597076416,
+        "max": 4.854822397232056,
+        "median": 4.703716039657593
+      }
+    },
+    {
+      "name": "Rng",
+      "N": 5000,
+      "times": [
+        2.3053719997406006,
+        2.269235849380493,
+        2.274996280670166
+      ],
+      "stats": {
+        "min": 2.269235849380493,
+        "max": 2.3053719997406006,
+        "median": 2.274996280670166
+      }
+    },
+    {
+      "name": "Lregression",
+      "N": 800000,
+      "times": [
+        3.881822347640991,
+        3.7383692264556885,
+        3.997716188430786
+      ],
+      "stats": {
+        "min": 3.7383692264556885,
+        "max": 3.997716188430786,
+        "median": 3.881822347640991
+      }
+    },
+    {
+      "name": "Lregressionfit",
+      "N": 800000,
+      "times": [
+        0.044150590896606445,
+        0.042052507400512695,
+        0.04151177406311035
+      ],
+      "stats": {
+        "min": 0.04151177406311035,
+        "max": 0.044150590896606445,
+        "median": 0.042052507400512695
+      }
+    },
+    {
+      "name": "Ridge",
+      "N": 800000,
+      "times": [
+        0.8990864753723145,
+        0.8862786293029785,
+        0.872654914855957
+      ],
+      "stats": {
+        "min": 0.872654914855957,
+        "max": 0.8990864753723145,
+        "median": 0.8862786293029785
+      }
+    },
+    {
+      "name": "Ridgefit",
+      "N": 800000,
+      "times": [
+        0.04519033432006836,
+        0.04038596153259277,
+        0.041409969329833984
+      ],
+      "stats": {
+        "min": 0.04038596153259277,
+        "max": 0.04519033432006836,
+        "median": 0.041409969329833984
+      }
+    },
+    {
+      "name": "Cosine",
+      "N": 30000,
+      "times": [
+        14.142443895339966,
+        14.103038311004639,
+        14.207080125808716
+      ],
+      "stats": {
+        "min": 14.103038311004639,
+        "max": 14.207080125808716,
+        "median": 14.142443895339966
+      }
+    },
+    {
+      "name": "Corr",
+      "N": 15000,
+      "times": [
+        15.987582683563232,
+        15.912505388259888,
+        15.894168853759766
+      ],
+      "stats": {
+        "min": 15.894168853759766,
+        "max": 15.987582683563232,
+        "median": 15.912505388259888
+      }
+    },
+    {
+      "name": "Svm",
+      "N": 3,
+      "times": [
+        1.4158146381378174,
+        1.4204697608947754,
+        1.415553092956543
+      ],
+      "stats": {
+        "min": 1.415553092956543,
+        "max": 1.4204697608947754,
+        "median": 1.4158146381378174
+      }
+    },
+    {
+      "name": "Kmeans",
+      "N": 100000,
+      "times": [
+        13.706067562103271,
+        13.804669380187988,
+        14.205992460250854
+      ],
+      "stats": {
+        "min": 13.706067562103271,
+        "max": 14.205992460250854,
+        "median": 13.804669380187988
+      }
+    },
+    {
+      "name": "Kmeansfit",
+      "N": 100000,
+      "times": [
+        13.709098100662231,
+        13.703646659851074,
+        13.70177173614502
+      ],
+      "stats": {
+        "min": 13.70177173614502,
+        "max": 13.709098100662231,
+        "median": 13.703646659851074
+      }
+    }
+  ]
+}

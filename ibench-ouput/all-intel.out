@@ -1,0 +1,346 @@
+{
+  "name": "noname",
+  "date": "2018-08-24-10-56-55",
+  "KMP_AFFINITY": "not set",
+  "OMP_NUM_THREADS": "not set",
+  "MKL_NUM_THREADS": "not set",
+  "host": "intel",
+  "lscpu": [
+    "b'Architecture:        x86_64",
+    "CPU op-mode(s):      32-bit, 64-bit",
+    "Byte Order:          Little Endian",
+    "CPU(s):              2",
+    "On-line CPU(s) list: 0,1",
+    "Thread(s) per core:  1",
+    "Core(s) per socket:  2",
+    "Socket(s):           1",
+    "NUMA node(s):        1",
+    "Vendor ID:           GenuineIntel",
+    "CPU family:          6",
+    "Model:               79",
+    "Model name:          Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz",
+    "Stepping:            1",
+    "CPU MHz:             2294.686",
+    "BogoMIPS:            4589.37",
+    "Hypervisor vendor:   Microsoft",
+    "Virtualization type: full",
+    "L1d cache:           32K",
+    "L1i cache:           32K",
+    "L2 cache:            256K",
+    "L3 cache:            51200K",
+    "NUMA node0 CPU(s):   0,1",
+    "Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology cpuid pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti fsgsbase bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt",
+    "'"
+  ],
+  "numactl": "",
+  "pip list": "",
+  "conda": [
+    "b'# packages in environment at /home/jan/.conda/envs/intelpython:",
+    "#",
+    "bzip2                     1.0.6                  intel_14  [intel]  intel",
+    "cycler                    0.10.0             py36_intel_5  [intel]  intel",
+    "daal                      2018.0.3.20180405               0    intel",
+    "freetype                  2.9                     intel_1  [intel]  intel",
+    "icc_rt                    2018.0.3                intel_0  [intel]  intel",
+    "intelpython               2018.0.3                      0    intel",
+    "Jinja2                    2.10                      <pip>",
+    "kiwisolver                1.0.1                    py36_1    intel",
+    "libpng                    1.6.34                  intel_1  [intel]  intel",
+    "MarkupSafe                1.0                       <pip>",
+    "matplotlib                2.2.2           np114py36_intel_1  [intel]  intel",
+    "mkl                       2018.0.3                intel_1    intel",
+    "mkl_fft                   1.0.2           np114py36_intel_0  [intel]  intel",
+    "mkl_random                1.0.1           np114py36_intel_0  [intel]  intel",
+    "numexpr                   2.6.4           np114py36_intel_0  [intel]  intel",
+    "numpy                     1.14.3             py36_intel_0  [intel]  intel",
+    "openmp                    2018.0.3                intel_0    intel",
+    "openssl                   1.0.2o                  intel_0  [intel]  intel",
+    "pandas                    0.22.0          np114py36_intel_4  [intel]  intel",
+    "pip                       9.0.1              py36_intel_0  [intel]  intel",
+    "pydaal                    2018.0.3.20180405 np114py36_intel_0  [intel]  intel",
+    "pyparsing                 2.2.0              py36_intel_0  [intel]  intel",
+    "python                    3.6.3                  intel_12  [intel]  intel",
+    "python-dateutil           2.6.0              py36_intel_3  [intel]  intel",
+    "pytz                      2018.4             py36_intel_0  [intel]  intel",
+    "scikit-learn              0.19.1          np114py36_intel_29  [intel]  intel",
+    "scipy                     1.0.1           np114py36_intel_3  [intel]  intel",
+    "setuptools                27.2.0             py36_intel_0  [intel]  intel",
+    "six                       1.10.0             py36_intel_8  [intel]  intel",
+    "sqlite                    3.23.1                  intel_0  [intel]  intel",
+    "tbb                       2018.0.1           py36_intel_4  [intel]  intel",
+    "tcl                       8.6.4                  intel_19  [intel]  intel",
+    "tk                        8.6.4                  intel_26  [intel]  intel",
+    "wheel                     0.31.0             py36_intel_0  [intel]  intel",
+    "xz                        5.2.3                   intel_0  [intel]  intel",
+    "zlib                      1.2.11                  intel_3  [intel]  intel",
+    "'"
+  ],
+  "runs": [
+    {
+      "name": "Cholesky",
+      "N": 10000,
+      "times": [
+        5.397531509399414,
+        5.330291986465454,
+        5.3328776359558105
+      ],
+      "stats": {
+        "min": 5.330291986465454,
+        "max": 5.397531509399414,
+        "median": 5.3328776359558105
+      }
+    },
+    {
+      "name": "Det",
+      "N": 15000,
+      "times": [
+        37.07713341712952,
+        36.808115005493164,
+        36.755125999450684
+      ],
+      "stats": {
+        "min": 36.755125999450684,
+        "max": 37.07713341712952,
+        "median": 36.808115005493164
+      }
+    },
+    {
+      "name": "Dot",
+      "N": 5000,
+      "times": [
+        3.9082980155944824,
+        3.9745211601257324,
+        3.978137731552124
+      ],
+      "stats": {
+        "min": 3.9082980155944824,
+        "max": 3.978137731552124,
+        "median": 3.9745211601257324
+      }
+    },
+    {
+      "name": "Fft",
+      "N": 1000000,
+      "times": [
+        28.36900568008423,
+        28.269728660583496,
+        27.932710647583008
+      ],
+      "stats": {
+        "min": 27.932710647583008,
+        "max": 28.36900568008423,
+        "median": 28.269728660583496
+      }
+    },
+    {
+      "name": "Inv",
+      "N": 10000,
+      "times": [
+        34.26593780517578,
+        34.03897833824158,
+        34.118956089019775
+      ],
+      "stats": {
+        "min": 34.03897833824158,
+        "max": 34.26593780517578,
+        "median": 34.118956089019775
+      }
+    },
+    {
+      "name": "Lu",
+      "N": 8000,
+      "times": [
+        6.496407985687256,
+        6.453023433685303,
+        6.372901916503906
+      ],
+      "stats": {
+        "min": 6.372901916503906,
+        "max": 6.496407985687256,
+        "median": 6.453023433685303
+      }
+    },
+    {
+      "name": "Qr",
+      "N": 5000,
+      "times": [
+        3.8704681396484375,
+        4.033123970031738,
+        3.9011006355285645
+      ],
+      "stats": {
+        "min": 3.8704681396484375,
+        "max": 4.033123970031738,
+        "median": 3.9011006355285645
+      }
+    },
+    {
+      "name": "Svd",
+      "N": 5000,
+      "times": [
+        50.52073907852173,
+        50.26559853553772,
+        50.00836658477783
+      ],
+      "stats": {
+        "min": 50.00836658477783,
+        "max": 50.52073907852173,
+        "median": 50.26559853553772
+      }
+    },
+    {
+      "name": "Blacksch",
+      "N": 100000000,
+      "times": [
+        5.903012990951538,
+        4.812849044799805,
+        4.818848371505737
+      ],
+      "stats": {
+        "min": 4.812849044799805,
+        "max": 5.903012990951538,
+        "median": 4.818848371505737
+      }
+    },
+    {
+      "name": "Rng",
+      "N": 5000,
+      "times": [
+        2.3661441802978516,
+        2.404083728790283,
+        2.3966500759124756
+      ],
+      "stats": {
+        "min": 2.3661441802978516,
+        "max": 2.404083728790283,
+        "median": 2.3966500759124756
+      }
+    },
+    {
+      "name": "Lregression",
+      "N": 800000,
+      "times": [
+        3.987675428390503,
+        3.9462392330169678,
+        4.002361059188843
+      ],
+      "stats": {
+        "min": 3.9462392330169678,
+        "max": 4.002361059188843,
+        "median": 3.987675428390503
+      }
+    },
+    {
+      "name": "Lregressionfit",
+      "N": 800000,
+      "times": [
+        0.04827094078063965,
+        0.04778885841369629,
+        0.046225547790527344
+      ],
+      "stats": {
+        "min": 0.046225547790527344,
+        "max": 0.04827094078063965,
+        "median": 0.04778885841369629
+      }
+    },
+    {
+      "name": "Ridge",
+      "N": 800000,
+      "times": [
+        0.909367561340332,
+        0.9260704517364502,
+        0.8862175941467285
+      ],
+      "stats": {
+        "min": 0.8862175941467285,
+        "max": 0.9260704517364502,
+        "median": 0.909367561340332
+      }
+    },
+    {
+      "name": "Ridgefit",
+      "N": 800000,
+      "times": [
+        0.04454231262207031,
+        0.0431818962097168,
+        0.0430145263671875
+      ],
+      "stats": {
+        "min": 0.0430145263671875,
+        "max": 0.04454231262207031,
+        "median": 0.0431818962097168
+      }
+    },
+    {
+      "name": "Cosine",
+      "N": 30000,
+      "times": [
+        14.783422708511353,
+        14.727402448654175,
+        14.885733842849731
+      ],
+      "stats": {
+        "min": 14.727402448654175,
+        "max": 14.885733842849731,
+        "median": 14.783422708511353
+      }
+    },
+    {
+      "name": "Corr",
+      "N": 15000,
+      "times": [
+        17.00191879272461,
+        17.007596492767334,
+        17.009000062942505
+      ],
+      "stats": {
+        "min": 17.00191879272461,
+        "max": 17.009000062942505,
+        "median": 17.007596492767334
+      }
+    },
+    {
+      "name": "Svm",
+      "N": 3,
+      "times": [
+        1.5845677852630615,
+        1.5457844734191895,
+        1.5734543800354004
+      ],
+      "stats": {
+        "min": 1.5457844734191895,
+        "max": 1.5845677852630615,
+        "median": 1.5734543800354004
+      }
+    },
+    {
+      "name": "Kmeans",
+      "N": 100000,
+      "times": [
+        15.115817546844482,
+        14.313234806060791,
+        14.815960168838501
+      ],
+      "stats": {
+        "min": 14.313234806060791,
+        "max": 15.115817546844482,
+        "median": 14.815960168838501
+      }
+    },
+    {
+      "name": "Kmeansfit",
+      "N": 100000,
+      "times": [
+        14.42142629623413,
+        14.515737533569336,
+        14.51140832901001
+      ],
+      "stats": {
+        "min": 14.42142629623413,
+        "max": 14.515737533569336,
+        "median": 14.51140832901001
+      }
+    }
+  ]
+}
